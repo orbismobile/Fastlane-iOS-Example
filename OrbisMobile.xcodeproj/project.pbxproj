@@ -1,0 +1,739 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08691B63208CE72600BB2981 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08691B62208CE72600BB2981 /* SnapshotHelper.swift */; };
+		0893243B208CD16100B5F2EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0893243A208CD16100B5F2EB /* AppDelegate.swift */; };
+		0893243D208CD16100B5F2EB /* FilmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0893243C208CD16100B5F2EB /* FilmViewController.swift */; };
+		08932440208CD16100B5F2EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0893243E208CD16100B5F2EB /* Main.storyboard */; };
+		08932443208CD16100B5F2EB /* OrbisMobile.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 08932441208CD16100B5F2EB /* OrbisMobile.xcdatamodeld */; };
+		08932445208CD16500B5F2EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08932444208CD16500B5F2EB /* Assets.xcassets */; };
+		08932448208CD16500B5F2EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08932446208CD16500B5F2EB /* LaunchScreen.storyboard */; };
+		08932453208CD16500B5F2EB /* OrbisMobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08932452208CD16500B5F2EB /* OrbisMobileTests.swift */; };
+		0893245E208CD16500B5F2EB /* OrbisMobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0893245D208CD16500B5F2EB /* OrbisMobileUITests.swift */; };
+		8CE9B0D9E1EEC9E6D60C56E0 /* Pods_OrbisMobileUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EF6D57873D7DDD07C86E1E1 /* Pods_OrbisMobileUITests.framework */; };
+		BB71AA4A0FD1249A4110A34A /* Pods_OrbisMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC3B9A1C590C9460C8BA938 /* Pods_OrbisMobile.framework */; };
+		C13A4E4D3E324F19A37C60D8 /* Pods_OrbisMobileTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19606C25099142A018549289 /* Pods_OrbisMobileTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0893244F208CD16500B5F2EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0893242F208CD16100B5F2EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08932436208CD16100B5F2EB;
+			remoteInfo = OrbisMobile;
+		};
+		0893245A208CD16500B5F2EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0893242F208CD16100B5F2EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08932436208CD16100B5F2EB;
+			remoteInfo = OrbisMobile;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08691B62208CE72600BB2981 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
+		08932437208CD16100B5F2EB /* OrbisMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrbisMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0893243A208CD16100B5F2EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0893243C208CD16100B5F2EB /* FilmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmViewController.swift; sourceTree = "<group>"; };
+		0893243F208CD16100B5F2EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		08932442208CD16100B5F2EB /* OrbisMobile.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OrbisMobile.xcdatamodel; sourceTree = "<group>"; };
+		08932444208CD16500B5F2EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		08932447208CD16500B5F2EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		08932449208CD16500B5F2EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0893244E208CD16500B5F2EB /* OrbisMobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrbisMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		08932452208CD16500B5F2EB /* OrbisMobileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbisMobileTests.swift; sourceTree = "<group>"; };
+		08932454208CD16500B5F2EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08932459208CD16500B5F2EB /* OrbisMobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrbisMobileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0893245D208CD16500B5F2EB /* OrbisMobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbisMobileUITests.swift; sourceTree = "<group>"; };
+		0893245F208CD16500B5F2EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19606C25099142A018549289 /* Pods_OrbisMobileTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrbisMobileTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EF6D57873D7DDD07C86E1E1 /* Pods_OrbisMobileUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrbisMobileUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D1C26380FDC857428B66BE3 /* Pods-OrbisMobileUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrbisMobileUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OrbisMobileUITests/Pods-OrbisMobileUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5868C5F3E0B28894A0F11B58 /* Pods-OrbisMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrbisMobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-OrbisMobile/Pods-OrbisMobile.release.xcconfig"; sourceTree = "<group>"; };
+		8DC3B9A1C590C9460C8BA938 /* Pods_OrbisMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrbisMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBACD50A3460621818000B5A /* Pods-OrbisMobileTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrbisMobileTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OrbisMobileTests/Pods-OrbisMobileTests.release.xcconfig"; sourceTree = "<group>"; };
+		F1417B07B29922EDDE37724E /* Pods-OrbisMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrbisMobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OrbisMobile/Pods-OrbisMobile.debug.xcconfig"; sourceTree = "<group>"; };
+		F6F4BFE4831371041DB7F681 /* Pods-OrbisMobileUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrbisMobileUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OrbisMobileUITests/Pods-OrbisMobileUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FE7F6CAF303A7FC420F2CF5F /* Pods-OrbisMobileTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrbisMobileTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OrbisMobileTests/Pods-OrbisMobileTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08932434208CD16100B5F2EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB71AA4A0FD1249A4110A34A /* Pods_OrbisMobile.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0893244B208CD16500B5F2EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C13A4E4D3E324F19A37C60D8 /* Pods_OrbisMobileTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08932456208CD16500B5F2EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CE9B0D9E1EEC9E6D60C56E0 /* Pods_OrbisMobileUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00D0FC2A8776D075A38A46AA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F1417B07B29922EDDE37724E /* Pods-OrbisMobile.debug.xcconfig */,
+				5868C5F3E0B28894A0F11B58 /* Pods-OrbisMobile.release.xcconfig */,
+				FE7F6CAF303A7FC420F2CF5F /* Pods-OrbisMobileTests.debug.xcconfig */,
+				EBACD50A3460621818000B5A /* Pods-OrbisMobileTests.release.xcconfig */,
+				4D1C26380FDC857428B66BE3 /* Pods-OrbisMobileUITests.debug.xcconfig */,
+				F6F4BFE4831371041DB7F681 /* Pods-OrbisMobileUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		0893242E208CD16100B5F2EB = {
+			isa = PBXGroup;
+			children = (
+				08932439208CD16100B5F2EB /* OrbisMobile */,
+				08932451208CD16500B5F2EB /* OrbisMobileTests */,
+				0893245C208CD16500B5F2EB /* OrbisMobileUITests */,
+				08932438208CD16100B5F2EB /* Products */,
+				00D0FC2A8776D075A38A46AA /* Pods */,
+				9B234F3FB7E3B874BEE4DAB0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		08932438208CD16100B5F2EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08932437208CD16100B5F2EB /* OrbisMobile.app */,
+				0893244E208CD16500B5F2EB /* OrbisMobileTests.xctest */,
+				08932459208CD16500B5F2EB /* OrbisMobileUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08932439208CD16100B5F2EB /* OrbisMobile */ = {
+			isa = PBXGroup;
+			children = (
+				0893243A208CD16100B5F2EB /* AppDelegate.swift */,
+				0893243C208CD16100B5F2EB /* FilmViewController.swift */,
+				0893243E208CD16100B5F2EB /* Main.storyboard */,
+				08932444208CD16500B5F2EB /* Assets.xcassets */,
+				08932446208CD16500B5F2EB /* LaunchScreen.storyboard */,
+				08932449208CD16500B5F2EB /* Info.plist */,
+				08932441208CD16100B5F2EB /* OrbisMobile.xcdatamodeld */,
+			);
+			path = OrbisMobile;
+			sourceTree = "<group>";
+		};
+		08932451208CD16500B5F2EB /* OrbisMobileTests */ = {
+			isa = PBXGroup;
+			children = (
+				08932452208CD16500B5F2EB /* OrbisMobileTests.swift */,
+				08932454208CD16500B5F2EB /* Info.plist */,
+			);
+			path = OrbisMobileTests;
+			sourceTree = "<group>";
+		};
+		0893245C208CD16500B5F2EB /* OrbisMobileUITests */ = {
+			isa = PBXGroup;
+			children = (
+				08691B62208CE72600BB2981 /* SnapshotHelper.swift */,
+				0893245D208CD16500B5F2EB /* OrbisMobileUITests.swift */,
+				0893245F208CD16500B5F2EB /* Info.plist */,
+			);
+			path = OrbisMobileUITests;
+			sourceTree = "<group>";
+		};
+		9B234F3FB7E3B874BEE4DAB0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8DC3B9A1C590C9460C8BA938 /* Pods_OrbisMobile.framework */,
+				19606C25099142A018549289 /* Pods_OrbisMobileTests.framework */,
+				1EF6D57873D7DDD07C86E1E1 /* Pods_OrbisMobileUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		08932436208CD16100B5F2EB /* OrbisMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08932462208CD16500B5F2EB /* Build configuration list for PBXNativeTarget "OrbisMobile" */;
+			buildPhases = (
+				8E08999474092B9E0BCE8BE1 /* [CP] Check Pods Manifest.lock */,
+				08932433208CD16100B5F2EB /* Sources */,
+				08932434208CD16100B5F2EB /* Frameworks */,
+				08932435208CD16100B5F2EB /* Resources */,
+				51EB3886D8E2CDA6F75C4E9F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OrbisMobile;
+			productName = OrbisMobile;
+			productReference = 08932437208CD16100B5F2EB /* OrbisMobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0893244D208CD16500B5F2EB /* OrbisMobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08932465208CD16500B5F2EB /* Build configuration list for PBXNativeTarget "OrbisMobileTests" */;
+			buildPhases = (
+				3552026243C142020CBA1D20 /* [CP] Check Pods Manifest.lock */,
+				0893244A208CD16500B5F2EB /* Sources */,
+				0893244B208CD16500B5F2EB /* Frameworks */,
+				0893244C208CD16500B5F2EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08932450208CD16500B5F2EB /* PBXTargetDependency */,
+			);
+			name = OrbisMobileTests;
+			productName = OrbisMobileTests;
+			productReference = 0893244E208CD16500B5F2EB /* OrbisMobileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		08932458208CD16500B5F2EB /* OrbisMobileUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08932468208CD16500B5F2EB /* Build configuration list for PBXNativeTarget "OrbisMobileUITests" */;
+			buildPhases = (
+				CA9AC002652F0E8C178F55D3 /* [CP] Check Pods Manifest.lock */,
+				08932455208CD16500B5F2EB /* Sources */,
+				08932456208CD16500B5F2EB /* Frameworks */,
+				08932457208CD16500B5F2EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0893245B208CD16500B5F2EB /* PBXTargetDependency */,
+			);
+			name = OrbisMobileUITests;
+			productName = OrbisMobileUITests;
+			productReference = 08932459208CD16500B5F2EB /* OrbisMobileUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0893242F208CD16100B5F2EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Orbis Mobile";
+				TargetAttributes = {
+					08932436208CD16100B5F2EB = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					0893244D208CD16500B5F2EB = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 08932436208CD16100B5F2EB;
+					};
+					08932458208CD16500B5F2EB = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 08932436208CD16100B5F2EB;
+					};
+				};
+			};
+			buildConfigurationList = 08932432208CD16100B5F2EB /* Build configuration list for PBXProject "OrbisMobile" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0893242E208CD16100B5F2EB;
+			productRefGroup = 08932438208CD16100B5F2EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				08932436208CD16100B5F2EB /* OrbisMobile */,
+				0893244D208CD16500B5F2EB /* OrbisMobileTests */,
+				08932458208CD16500B5F2EB /* OrbisMobileUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		08932435208CD16100B5F2EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08932448208CD16500B5F2EB /* LaunchScreen.storyboard in Resources */,
+				08932445208CD16500B5F2EB /* Assets.xcassets in Resources */,
+				08932440208CD16100B5F2EB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0893244C208CD16500B5F2EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08932457208CD16500B5F2EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3552026243C142020CBA1D20 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OrbisMobileTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51EB3886D8E2CDA6F75C4E9F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-OrbisMobile/Pods-OrbisMobile-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OrbisMobile/Pods-OrbisMobile-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E08999474092B9E0BCE8BE1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OrbisMobile-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA9AC002652F0E8C178F55D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OrbisMobileUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08932433208CD16100B5F2EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08932443208CD16100B5F2EB /* OrbisMobile.xcdatamodeld in Sources */,
+				0893243D208CD16100B5F2EB /* FilmViewController.swift in Sources */,
+				0893243B208CD16100B5F2EB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0893244A208CD16500B5F2EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08932453208CD16500B5F2EB /* OrbisMobileTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08932455208CD16500B5F2EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0893245E208CD16500B5F2EB /* OrbisMobileUITests.swift in Sources */,
+				08691B63208CE72600BB2981 /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		08932450208CD16500B5F2EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08932436208CD16100B5F2EB /* OrbisMobile */;
+			targetProxy = 0893244F208CD16500B5F2EB /* PBXContainerItemProxy */;
+		};
+		0893245B208CD16500B5F2EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08932436208CD16100B5F2EB /* OrbisMobile */;
+			targetProxy = 0893245A208CD16500B5F2EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0893243E208CD16100B5F2EB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0893243F208CD16100B5F2EB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		08932446208CD16500B5F2EB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08932447208CD16500B5F2EB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		08932460208CD16500B5F2EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		08932461208CD16500B5F2EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		08932463208CD16500B5F2EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1417B07B29922EDDE37724E /* Pods-OrbisMobile.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = Z894G6Y62M;
+				INFOPLIST_FILE = OrbisMobile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pe.com.orbis.OrbisMobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "60d84a71-747c-49e9-b2ba-8500a75bfe1a";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development pe.com.orbis.OrbisMobile";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		08932464208CD16500B5F2EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5868C5F3E0B28894A0F11B58 /* Pods-OrbisMobile.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = Z894G6Y62M;
+				INFOPLIST_FILE = OrbisMobile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pe.com.orbis.OrbisMobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "60d84a71-747c-49e9-b2ba-8500a75bfe1a";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development pe.com.orbis.OrbisMobile";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		08932466208CD16500B5F2EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE7F6CAF303A7FC420F2CF5F /* Pods-OrbisMobileTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CPX7FN2K89;
+				INFOPLIST_FILE = OrbisMobileTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pe.com.orbis.OrbisMobileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OrbisMobile.app/OrbisMobile";
+			};
+			name = Debug;
+		};
+		08932467208CD16500B5F2EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBACD50A3460621818000B5A /* Pods-OrbisMobileTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CPX7FN2K89;
+				INFOPLIST_FILE = OrbisMobileTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pe.com.orbis.OrbisMobileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OrbisMobile.app/OrbisMobile";
+			};
+			name = Release;
+		};
+		08932469208CD16500B5F2EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D1C26380FDC857428B66BE3 /* Pods-OrbisMobileUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CPX7FN2K89;
+				INFOPLIST_FILE = OrbisMobileUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pe.com.orbis.OrbisMobileUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OrbisMobile;
+			};
+			name = Debug;
+		};
+		0893246A208CD16500B5F2EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6F4BFE4831371041DB7F681 /* Pods-OrbisMobileUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CPX7FN2K89;
+				INFOPLIST_FILE = OrbisMobileUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pe.com.orbis.OrbisMobileUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OrbisMobile;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08932432208CD16100B5F2EB /* Build configuration list for PBXProject "OrbisMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08932460208CD16500B5F2EB /* Debug */,
+				08932461208CD16500B5F2EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08932462208CD16500B5F2EB /* Build configuration list for PBXNativeTarget "OrbisMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08932463208CD16500B5F2EB /* Debug */,
+				08932464208CD16500B5F2EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08932465208CD16500B5F2EB /* Build configuration list for PBXNativeTarget "OrbisMobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08932466208CD16500B5F2EB /* Debug */,
+				08932467208CD16500B5F2EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08932468208CD16500B5F2EB /* Build configuration list for PBXNativeTarget "OrbisMobileUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08932469208CD16500B5F2EB /* Debug */,
+				0893246A208CD16500B5F2EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		08932441208CD16100B5F2EB /* OrbisMobile.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				08932442208CD16100B5F2EB /* OrbisMobile.xcdatamodel */,
+			);
+			currentVersion = 08932442208CD16100B5F2EB /* OrbisMobile.xcdatamodel */;
+			path = OrbisMobile.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 0893242F208CD16100B5F2EB /* Project object */;
+}

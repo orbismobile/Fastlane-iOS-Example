@@ -1,0 +1,114 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+application_name = "App"
+application_id = "pe.com.app"
+channel_notification = "#meetup"
+
+platform :ios do
+
+  before_all do
+    ENV["SLACK_URL"] = "https://hooks.slack.com/services/********"
+    # Esta configuración nos ayudara a subir nuestro ipa por Pilot, evitando posibles problemas de firewall
+    ENV["DELIVER_ITMSTRANSPORTER_ADDITIONAL_UPLOAD_PARAMETERS"] = "-t DAV"
+  end
+
+  desc "Generate Certificates for #{application_name}"
+  lane :certificate do
+      match(type: "development")
+      #match(type: "adhoc")
+      #match(type: "appstore")
+      slack(
+          message: "Se instalaron los certificados 🎉 😎",
+          channel: "#{channel_notification}"
+      )
+  end
+
+  desc "This lane is for install the app via adhoc, example: fastlane adhoc version:1.0 build:1 tag:1.0-beta1"
+  lane :adhoc do |options|
+      #ensure_git_status_clean
+      ensure_git_branch(branch: 'debug')
+      if !options[:version].to_s.empty?
+          increment_version_number(version_number: "#{options[:version]}")
+      end
+      if !options[:build].to_s.empty?
+          increment_build_number(build_number: "#{options[:build]}")
+      end
+      cocoapods
+      match(type:"adhoc")
+      gym(
+          scheme: "OrbisMobile",
+          export_method: "ad-hoc"
+      )
+      install_on_device(
+          ipa: "./#{application_name}.ipa"
+      )
+      slack(
+          message: "adhoc #{application_name} #{options[:tag]} (#{get_build_number}) listo! 🎉 😎",
+          channel: "#{channel_notification}",
+          default_payloads: [:git_author]
+      )
+      clean_build_artifacts
+  end
+
+  desc "Create a testflight, example: fastlane test_flight version:1.0 build:1 tag:1.0-beta1"
+  lane :test_flight do |options|
+      #ensure_git_status_clean
+      ensure_git_branch(
+          branch: 'debug'
+      )
+      sh("git pull origin debug && git fetch --tags")
+      if !options[:version].to_s.empty?
+          increment_version_number(version_number: "#{options[:version]}")
+      end
+      if !options[:build].to_s.empty?
+          increment_build_number(build_number: "#{options[:build]}")
+      end
+      cocoapods
+      slack(
+          message: "Generando el beta #{last_git_tag} (#{get_build_number}) de #{application_name} para testflight",
+          channel: "#{channel_notification}",
+          default_payloads: [:git_author]
+      )
+      match(type:"appstore")
+      gym(
+          scheme: "#{options[:scheme]}",
+          export_method: "app-store",
+          export_options: {
+              provisioningProfiles: {
+                  "pe.com.app": "match AppStore pe.com.app",
+                  "pe.com.app.*": "match AppStore pe.com.app.*"
+              }
+          }
+      )
+      pilot(
+          username: "#{application_id}",
+          skip_waiting_for_build_processing: true
+      )
+  
+      if !options[:tag].to_s.empty?
+          git_add(path:"./")
+          git_commit(path:"./", message:"Versión #{options[:tag]}")
+          set_new_tag(options[:tag])
+          push_to_git_remote
+          push_git_tags
+      end
+  
+      slack(
+          message: "#{application_name} #{options[:tag]} (#{get_build_number}) ya esta en testflight! 🎉 😎",
+          channel: "#{channel_notification}"
+      )
+      clean_build_artifacts
+  end
+
+end
